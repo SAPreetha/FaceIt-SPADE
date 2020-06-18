@@ -1,13 +1,19 @@
-FACEGAN_SPADE:
-Generating and manipulating real facial structure by parts using AI.
+#FACEIt_SPADE:
+Generating faces by manipulating segmentation maps of facial attributes using AI.
 
-Project Overview:
-This a type of conditional Generative Adversarial Network(GAN) that takes in semantic segmentation map of the facial attributes and generates a real looking face conditioned according to the input map. The process is termed as Semantic Image Synthesis.
+##Project Overview:
+Developed an interactive web application to create realistic faces from semantic segmentation maps of the facial attributes using a SPADE based GAN and deployed with Streamlit.
+This a type of conditional Generative Adversarial Network(GAN) that takes in segmentation map of the facial attributes and generates a real looking face conditioned according to the input map. 
+The process is termed as Semantic Image Synthesis.
+##Results:
 
-The model is called SPADE was developed by [NVlabs](https://github.com/NVlabs/SPADE) and is based on the [paper](https://arxiv.org/pdf/1903.07291.pdf).
-The project uses SPADE model codes from the NVIDIA repository and the training procedure from their paper.
+![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Results/Ex1.jpg)
 
-Results:
+
+The model called SPADE is developed by [NVlabs](https://github.com/NVlabs/SPADE) and is based on the [paper](https://arxiv.org/pdf/1903.07291.pdf).
+My project uses SPADE model codes from the NVIDIA repository and the training procedure from their paper.
+
+
 
 
 Data:
@@ -24,5 +30,5 @@ Codes:
 
 Acknowledgements:
 Articles:
-SPADE: State of the art in Image-to-Image Translation by Nvidia.https://medium.com/@kushajreal/spade-state-of-the-art-in-image-to-image-translation-by-nvidia-bb49f2db2ce3
-Understanding GauGAN:[Article](https://blog.paperspace.com/nvidia-gaugan-introduction/)
+*SPADE: State of the art in Image-to-Image Translation by Nvidia.https://medium.com/@kushajreal/spade-state-of-the-art-in-image-to-image-translation-by-nvidia-bb49f2db2ce3
+*Understanding GauGAN:[Article](https://blog.paperspace.com/nvidia-gaugan-introduction/)
