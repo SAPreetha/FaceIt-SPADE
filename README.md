@@ -17,7 +17,7 @@ Details about the project can viewed from Presentation [Slides](https://docs.goo
 
 
 ## Streamlit App: ##
-Here's a small example of the streamlit app. This interactive web application lets user manipulate and move the facial attribute masks to generate segmented face maps and converts them to picture of real looking faces.
+Here's a small example of the streamlit app. This interactive web application lets user select from a wide variety of facial attribute masks and manipulate and move the masks to generate segmented face maps and converts them to pictures of real looking faces.
 
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/1.gif)
 
