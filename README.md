@@ -9,12 +9,12 @@ This a type of conditional Generative Adversarial Network(GAN) that takes in seg
 The process is termed as Semantic Image Synthesis.
 
 ## Presentation Slides : ##
-<<<<<<< HEAD
 Details about the project can viewed from Slide deck here [Slides](https://docs.google.com/presentation/d/1g1K8sfpHj0pCookdpxHvF1n1CFKMPeFp2Sqz1Ngfvf4/edit#slide=id.g8a61dbc963_0_51)
 
 
 ## Streamlit App: Create your own Avatars for video games!: ##
 Run the App [FACEIt](http://34.221.66.235:8501)
+
 Here's a small example of the streamlit app. This interactive web application lets the user select from a wide variety of facial attribute masks and manipulate and move the masks to generate segmented face maps and converts them to pictures of real looking faces.
 
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/1.gif)
@@ -59,7 +59,7 @@ $python train.py --name celeb --gpu_ids 0,1,2,3,4,5,6,7 --batchSize 32 --dataset
 $cd SPADE/
 $python test.py --name celeb_new --label_nc 19 --dataset_mode custom --no_instance --preprocess_mode 'resize_and_crop' --label_dir datasets/celeb_data/test2_label --image_dir datasets/celeb_data/test2_image/ --load_size 128 --aspect_ratio 1 --crop_size 128
 ```
-=======
+
 Details about the project can viewed from Presentation [Slides](https://docs.google.com/presentation/d/1g1K8sfpHj0pCookdpxHvF1n1CFKMPeFp2Sqz1Ngfvf4/edit#slide=id.g8a61dbc963_0_51)
 
 
@@ -68,14 +68,10 @@ Details about the project can viewed from Presentation [Slides](https://docs.goo
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Results/Ex1.jpg)
 
 
-<<<<<<< HEAD
+
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Results/Ex2.jpg)
 
-=======
-## Streamlit App: ##
-Here's a small example of the streamlit app. This interactive web application lets user select from a wide variety of facial attribute masks and manipulate and move the masks to generate segmented face maps and converts them to pictures of real looking faces.
 
-![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/1.gif)
 
 
 
@@ -101,10 +97,6 @@ Loss Functions:
 
 
 
-
-
-=======
-![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/loss.jpg)
 
 
 
