@@ -100,22 +100,6 @@ Loss Functions:
 
 
 
-
-## DATA and Training details ##
-Data:
-Dataset used : [CelebA](https://github.com/switchablenorms/CelebAMask-HQ) 
-Details: 30000 images with facial attribute masks
-Sample images in Folder: Data
-Codes for generating segmentation maps from the masks: Data_gen Folder
-
-Training details:
-*  Training set 20K images(128*128 pixels)
-*  Batch size 32 images, Trained using 8 distributed K80 GPUs
-
-
-
-
-
 ## Acknowledgements: ##
 ##### Articles: #####
 * Understanding GauGAN [Article](https://blog.paperspace.com/nvidia-gaugan-introduction/)
