@@ -21,8 +21,6 @@ Here's a small example of the streamlit app. This interactive web application le
 
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/1.gif)
 
-## Codes: ##
-
 
 ## Model: ##
 
@@ -44,7 +42,7 @@ Loss Functions:
 
 
 
-
+## DATA and Training details ##
 Data:
 Dataset used : [CelebA](https://github.com/switchablenorms/CelebAMask-HQ) 
 Details: 30000 images with facial attribute masks
@@ -52,12 +50,14 @@ Sample images in Folder: Data
 Codes for generating segmentation maps from the masks: Data_gen Folder
 
 Training details:
-
+*  Training set 20K images(128*128 pixels)
+*  Batch size 32 images, Trained using 8 distributed K80 GPUs
 
 
 
 
 ## Acknowledgements: ##
 ##### Articles: #####
-* SPADE: State of the art in Image-to-Image Translation by Nvidia [Article](https://medium.com/@kushajreal/spade-state-of-the-art-in-image-to-image-translation-by-nvidia-bb49f2db2ce3)
 * Understanding GauGAN [Article](https://blog.paperspace.com/nvidia-gaugan-introduction/)
+
+* SPADE: State of the art in Image-to-Image Translation by Nvidia [Article](https://medium.com/@kushajreal/spade-state-of-the-art-in-image-to-image-translation-by-nvidia-bb49f2db2ce3)
