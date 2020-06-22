@@ -9,6 +9,7 @@ This a type of conditional Generative Adversarial Network(GAN) that takes in seg
 The process is termed as Semantic Image Synthesis.
 
 ## Presentation Slides : ##
+<<<<<<< HEAD
 Details about the project can viewed from Slide deck here [Slides](https://docs.google.com/presentation/d/1g1K8sfpHj0pCookdpxHvF1n1CFKMPeFp2Sqz1Ngfvf4/edit#slide=id.g8a61dbc963_0_51)
 
 
@@ -58,14 +59,24 @@ $python train.py --name celeb --gpu_ids 0,1,2,3,4,5,6,7 --batchSize 32 --dataset
 $cd SPADE/
 $python test.py --name celeb_new --label_nc 19 --dataset_mode custom --no_instance --preprocess_mode 'resize_and_crop' --label_dir datasets/celeb_data/test2_label --image_dir datasets/celeb_data/test2_image/ --load_size 128 --aspect_ratio 1 --crop_size 128
 ```
+=======
+Details about the project can viewed from Presentation [Slides](https://docs.google.com/presentation/d/1g1K8sfpHj0pCookdpxHvF1n1CFKMPeFp2Sqz1Ngfvf4/edit#slide=id.g8a61dbc963_0_51)
+>>>>>>> 09adb304cf342707abc680d5aa1818cb4446dd4b
 
 ## Results: ##
 
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Results/Ex1.jpg)
 
 
+<<<<<<< HEAD
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Results/Ex2.jpg)
 
+=======
+## Streamlit App: ##
+Here's a small example of the streamlit app. This interactive web application lets user select from a wide variety of facial attribute masks and manipulate and move the masks to generate segmented face maps and converts them to pictures of real looking faces.
+
+![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/1.gif)
+>>>>>>> 09adb304cf342707abc680d5aa1818cb4446dd4b
 
 
 ## Model: ##
@@ -76,17 +87,39 @@ My project uses SPADE model codes from the NVIDIA repository and the training pr
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/spade_architecture.jpg)
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/gen_dis_architecture.jpg)
 
+<<<<<<< HEAD
 
 ![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/loss.jpg)
+=======
+### Loss graphs ###
+>>>>>>> 09adb304cf342707abc680d5aa1818cb4446dd4b
 
 Loss Functions:
 * Hinge loss: A generated Image is rescaled to multiples scales and for each of them discriminator computes  the realness score and back propagates the cumulative loss
 * Feature matching loss: L1 distance between the discriminator feature maps of the real images and the discriminator feature maps of the fake images is penalized.
 * VGG loss:  VGG-19 pre-trained on Imagenet is used to compute the feature maps for real and fake images. Then L1 distance between the feature maps of real and fake images is penalized.
 
+<<<<<<< HEAD
 
 
 
+=======
+![alt text](https://github.com/SAPreetha/FaceIt-SPADE/blob/master/Images/loss.jpg)
+
+
+
+
+## DATA and Training details ##
+Data:
+Dataset used : [CelebA](https://github.com/switchablenorms/CelebAMask-HQ) 
+Details: 30000 images with facial attribute masks
+Sample images in Folder: Data
+Codes for generating segmentation maps from the masks: Data_gen Folder
+
+Training details:
+*  Training set 20K images(128*128 pixels)
+*  Batch size 32 images, Trained using 8 distributed K80 GPUs
+>>>>>>> 09adb304cf342707abc680d5aa1818cb4446dd4b
 
 
 
