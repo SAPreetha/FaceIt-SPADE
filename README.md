@@ -93,6 +93,7 @@ My project uses SPADE model codes from the NVIDIA repository and the training pr
 Loss Functions:
 The Model incorporates the following loss functions,
 * Hinge loss(Multiscale Adversarial Loss): A generated Image is rescaled to multiples scales and for each of them discriminator computes  the realness score and back propagates the cumulative loss.
+This metric is known to perform better in Image synthesis GANs(in comparison to LS metric and binary cross entropy metric). Well known GANs like SAGAN and Geometric GAN use Hinge loss metric and have worked well with the evaluation metric like FID.
 
 Feature matching losses: GANs need to produce images which are not merely able to fool the generator, but the generated images should also have the same statistical properties as that of real images.
 
