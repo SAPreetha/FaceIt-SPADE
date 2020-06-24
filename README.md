@@ -34,6 +34,8 @@ Dataset used : [CelebA](https://github.com/switchablenorms/CelebAMask-HQ)
 Details: 30000 images with facial attribute masks
 Sample images in Folder: datasets/celeb_data/train_img and datasets/celeb_data/train_label/
 Codes for generating segmentation maps from the masks: Data_gen Folder
+
+
 Label categories: dataset has 19 different categories.
 ```
 label_list = ['skin', 'nose', 'eye_g', 'l_eye', 'r_eye', 'l_brow', 'r_brow', 'l_ear', 'r_ear', 'mouth', 'u_lip', 'l_lip', 'hair', 'hat', 'ear_r', 'neck_l', 'neck', 'cloth']
