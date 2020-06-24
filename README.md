@@ -13,7 +13,7 @@ Details about the project can viewed from slide deck here [Slides](https://docs.
 
 
 ## Streamlit App: Create your own Avatars for video games! ##
-Run the App [FACEIt](http://52.13.33.141:8501)
+Run the App [FACEIt](http://34.217.85.128:8501/)
 
 Here's an example of the streamlit app. This interactive web application lets the user select from a wide variety of facial attribute masks and manipulate and move the masks to generate segmented face maps and converts them to pictures of real looking faces.
 
@@ -28,13 +28,16 @@ pip install requirements.txt
 streamlit run faceit_app.py
 ```
 
-### DATA and Training details ###
+### Data and Training details ###
 Data:
 Dataset used : [CelebA](https://github.com/switchablenorms/CelebAMask-HQ) 
 Details: 30000 images with facial attribute masks
 Sample images in Folder: datasets/celeb_data/train_img and datasets/celeb_data/train_label/
 Codes for generating segmentation maps from the masks: Data_gen Folder
-
+Label categories: dataset has 19 different categories.
+```
+label_list = ['skin', 'nose', 'eye_g', 'l_eye', 'r_eye', 'l_brow', 'r_brow', 'l_ear', 'r_ear', 'mouth', 'u_lip', 'l_lip', 'hair', 'hat', 'ear_r', 'neck_l', 'neck', 'cloth']
+```
 Training details:
 *  Training set 20K images(128*128 pixels)
 *  Batch size 32 images, Trained using 8 distributed K80 GPUs
@@ -93,9 +96,9 @@ My project uses SPADE model codes from the NVIDIA repository and the training pr
 Loss Functions:
 The Model incorporates the following loss functions,
 * Hinge loss(Multiscale Adversarial Loss): A generated Image is rescaled to multiples scales and for each of them discriminator computes  the realness score and back propagates the cumulative loss.
-This metric is known to perform better in Image synthesis GANs(in comparison to LS metric and binary cross entropy metric). Well known GANs like SAGAN and Geometric GAN use Hinge loss metric and have worked well with the evaluation metric like FID.
+This metric is known to perform better in Image synthesis GANs(in comparison to LS metric and binary cross entropy metric). Well known GANs like SAGAN and Geometric GAN use Hinge loss metric and have worked well with the evaluation metrics like FID.
 
-Feature matching losses: GANs need to produce images which are not merely able to fool the generator, but the generated images should also have the same statistical properties as that of real images.
+Feature matching losses: GANs should produce images which are not merely able to fool the generator, but the generated images should also have the same statistical properties as that of real images.
 
 * Feature matching loss: L1 distance between the discriminator feature maps of the real images and the discriminator feature maps of the fake images is penalized.
 * VGG loss:  VGG-19 pre-trained on Imagenet is used to compute the feature maps for real and fake images. Then L1 distance between the feature maps of real and fake images is penalized.
