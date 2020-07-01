@@ -13,7 +13,7 @@ Details about the project can viewed from slide deck here [Slides](https://docs.
 
 
 ## Streamlit App: Create your own Avatars for video games! ##
-Run the App [FACEIt](http://34.217.85.128:8501/)
+Run the App [FACEIt](http://34.214.111.193:8501/)
 
 Here's an example of the streamlit app. This interactive web application lets the user select from a wide variety of facial attribute masks and manipulate and move the masks to generate segmented face maps and converts them to pictures of real looking faces.
 
